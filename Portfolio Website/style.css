@@ -311,7 +311,9 @@ header {
 }
 
 .services {
-    margin-bottom: 4em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    
 }
 
 .service {
