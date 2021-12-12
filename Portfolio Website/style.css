@@ -69,6 +69,7 @@ strong { font-weight: var(--fw-bold) }
 /* Buttons */
 
 .btn {
+    margin-top: 50px;
     display: inline-block;
     padding: .5em 2.5em;
     background: var(--clr-accent);
@@ -127,6 +128,12 @@ h3 { font-size: var(--fs-h3) }
 
 .section__subtitle--project {
     color: var(--clr-accent);
+    font-weight: var(--fw-bold);
+    margin-bottom: 2em;
+}
+
+.section__subtitle--tech {
+    color: var(--clr-light);
     font-weight: var(--fw-bold);
     margin-bottom: 2em;
 }
@@ -286,29 +293,12 @@ header {
 
 /*  Technologies  */
 
-.my-techs {
+.my-tech {
     background-color: var(--clr-dark);
-    background-size: cover;
-    background-blend-mode: multiply;
-    color: var(--clr-light);
-    text-align: center;
-
-}
-
-.section__title--services {
     color: var(--clr-accent);
-    position: relative;
+    text-align: center; 
 }
 
-.section__title--services::after {
-    content: '';
-    display: block;
-    width: 2em;
-    height: 1px;
-    margin: 0.5em auto 1em;
-    background: var(--clr-light);
-    opacity: 0.25;
-}
 
 .techs {
     display: grid;
@@ -316,25 +306,23 @@ header {
     
 }
 
+.tech__item {
+    background: var(--clr-dark);
+}
+
 .tech__img {
     transition: 
         transform 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
-        padding: auto;
+    
 }
 
 .tech__img:hover{
     transform: scale(1.2);
 }
 
-@media (min-width: 800px) {
-    .techs {
-        display: flex;
-        max-width: 1000px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
+
+/* Who am I */
 
 .about-me {
     max-width: 1000px;
@@ -451,17 +439,32 @@ header {
 
 /* Individual portfolio item styles */
 
-.portfolio-item-individual {
+.project-item-individual {
     padding: 0 2em 2em;
     max-width: 1000px;
     margin: 0 auto;
 }
 
-.portfolio-item-individual p {
+.project-item-individual p {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto
 }
+
+/* Individual tech item styles */
+
+.tech-item-individual {
+    padding: 0 2em 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.tech-item-individual p {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto
+}
+
 
 
 
