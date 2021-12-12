@@ -125,7 +125,7 @@ h3 { font-size: var(--fs-h3) }
     margin-bottom: 1em;
 }
 
-.section__subtitle--work {
+.section__subtitle--project {
     color: var(--clr-accent);
     font-weight: var(--fw-bold);
     margin-bottom: 2em;
@@ -284,15 +284,15 @@ header {
 }
 
 
-/*  My services section  */
+/*  Technologies  */
 
-.my-services {
+.my-techs {
     background-color: var(--clr-dark);
-    background-image: url(../Images/myskills-bg.jpg);
     background-size: cover;
     background-blend-mode: multiply;
     color: var(--clr-light);
     text-align: center;
+
 }
 
 .section__title--services {
@@ -310,30 +310,31 @@ header {
     opacity: 0.25;
 }
 
-.services {
+.techs {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     
 }
 
-.service {
-    max-width: 500px;
-    margin: 0 auto;
+.tech__img {
+    transition: 
+        transform 750ms cubic-bezier(.5, 0, .5, 1),
+        opacity 250ms linear;
+        padding: auto;
+}
+
+.tech__img:hover{
+    transform: scale(1.2);
 }
 
 @media (min-width: 800px) {
-    .services {
+    .techs {
         display: flex;
         max-width: 1000px;
         margin-left: auto;
         margin-right: auto;
     }
-    
-    .service + .service {
-        margin-left: 2em;
-    }
 }
-
 
 .about-me {
     max-width: 1000px;
@@ -376,33 +377,31 @@ header {
     }
 }
 
-/* My Work */
+/* Projects */
 
-.my-work {
+.my-project {
     background-color: var(--clr-dark);
     color: var(--clr-light);
     text-align: center;    
 }
 
-.portfolio {
+.projects {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.portfolio__item {
+.project__item {
     background: var(--clr-dark);
-    overflow: hidden;
 }
 
-.portfolio__img {
+.project__img {
     transition: 
         transform 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
 }
 
-.portfolio__img:hover {
+.project__img:hover {
     transform: scale(1.2);
-    opacity: .5;
 }
 
 /* footer */
